@@ -7,7 +7,7 @@ function ErrorPage() {
   return (
     <>
       <main>
-        <h1>Whoops! Something went wrong!</h1>
+        <h1>Whoopsie Daisy! Invalid URL</h1>
       </main>
     </>
   );

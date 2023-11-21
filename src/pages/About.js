@@ -5,7 +5,8 @@ function About() {
   return (
   <>
     <NavBar/>
-    <h1>This is my about component!</h1>
+    <h1>About</h1>
+    <p>Andy grew up in the small mountain town of Leadville, Colorado.</p>
   </>
   
   );

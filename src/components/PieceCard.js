@@ -5,7 +5,8 @@ function PieceCard({piece}) {
     <div>
         <h2>Composer: {piece.composer}</h2>
         <h2>Piece name: {piece.name}</h2> 
-        <Link to = {piece.audio}> Listen here!</Link>
+        {piece.audio ? <Link to = {piece.audio}> Listen here!</Link> : <p>Learn this one!</p> }
+        <br/>
         <br/>
     </div>
   );

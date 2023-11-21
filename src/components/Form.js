@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function Form(){
+function Form({addPiece}){
 
     const [composer, setComposer] = useState("")
     const [pieceName, setPieceName] = useState("")
@@ -9,7 +9,9 @@ function Form(){
     function handleSubmit(e)
     {
         e.preventDefault();
-        console.log(composer, pieceName);
+        addPiece({composer, pieceName});
+        setComposer('');
+        setPieceName('');
         
     };
 
@@ -17,7 +19,7 @@ function Form(){
     return(
         <div>
             <form onSubmit={handleSubmit}>
-                <label> Add a piece:
+                <label> Suggest a Piece:
                     <input
                     type = "text"
                     value = {composer}
@@ -33,7 +35,7 @@ function Form(){
                     onChange={(e) => setPieceName(e.target.value)}
                     />
                     </label>
-
+                    <button type="submit">Submit</button>
             </form>
         </div>
     )
