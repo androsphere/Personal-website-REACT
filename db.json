@@ -20,20 +20,8 @@
     },
     {
       "id": 4,
-      "composer": "2",
-      "name": "3",
-      "audio": null
-    },
-    {
-      "id": 5,
-      "composer": "Andrew",
-      "name": "Waltz",
-      "audio": null
-    },
-    {
-      "id": 6,
-      "composer": "test1",
-      "name": "test2",
+      "composer": "Franz Liszt",
+      "name": "Nocturne no 5",
       "audio": null
     }
   ]

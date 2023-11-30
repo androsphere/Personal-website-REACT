@@ -18,8 +18,6 @@ function Pieces() {
 
 function addPiece(piece){
 
- 
-
   const newPiece = {
     "id":piecesList.length+1,
     "composer":piece.composer,
