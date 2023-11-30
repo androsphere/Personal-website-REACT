@@ -35,19 +35,14 @@ function addPiece(piece){
       "Content-Type": "application/json",
     },
     body: JSON.stringify(newPiece),
-  })
-  
-    
+  })    
 }
   
-
-
   const piecesToRender = piecesList.map(piece => {
     return <PieceCard key = {piece.id} piece = {piece}/>
   }
   );
   
-
   return (
     <div>
       <NavBar/>
