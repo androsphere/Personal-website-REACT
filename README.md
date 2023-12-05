@@ -4,5 +4,5 @@ My app is effectively a template for an about me website. I have used it to rend
 
 The routes component sets up the client side routing and the NavBar renders the NavLink components at the top of each page.
 
-The pieces page handles the fetch requests and rendering of pieces as well as links to my performances of those pieces. It also has a form with two inputs that allow the user to suggest pieces. These are rendered under the established pieces and posted to the database.
+The pieces page handles the fetch requests and rendering of pieces as well as links to my performances of those pieces on SoundCloud. It also has a form with two inputs that allow the user to suggest pieces. These are rendered under the established pieces and posted to the database.
 
