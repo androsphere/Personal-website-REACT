@@ -19,13 +19,10 @@ function Pieces() {
 function addPiece(piece){
 
   const newPiece = {
-    "id":piecesList.length+1,
     "composer":piece.composer,
     "name":piece.pieceName,
     "audio":null
   }
-  const newList= [...piecesList, newPiece];
-  setPiecesList(newList);
 
   fetch("http://localhost:3000/pieces", {
    
@@ -35,7 +32,10 @@ function addPiece(piece){
       "Content-Type": "application/json",
     },
     body: JSON.stringify(newPiece),
-  })    
+  }) 
+  .then (r => r.json())
+  .then (data => setPiecesList([...piecesList,data]))
+   
 }
   
   const piecesToRender = piecesList.map(piece => {
